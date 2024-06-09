@@ -1,5 +1,3 @@
-public
-!public/.well-known
 resources
 assets/jsconfig.json
 .hugo_build.lock
