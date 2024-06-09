@@ -1,7 +1,7 @@
 baseurl: https://romophic.pages.dev
 languageCode: ja
 theme: hugo-theme-stack
-paginate: 3
+paginate: 6
 title: romophic
 copyright: romophic
 
@@ -13,40 +13,13 @@ DefaultContentLanguage: ja
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: true
 
-languages:
-    ja:
-        languageName: Japanese
-        title: romophic
-        weight: 1
-        params:
-            description: Example description
-    en:
-        languageName: English
-        title: Example Site
-        weight: 1
-        params:
-            description: Example description
-    zh-cn:
-        languageName: 中文
-        title: 演示站点
-        weight: 2
-        params:
-            description: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            description: وصف تجريبي
-
 services:
     # Change it to your Disqus shortname before using
     disqus:
         shortname: "hugo-theme-stack"
     # GA Tracking ID
     googleAnalytics:
-        id:
+        id: G-BGCZTCSFP2
 
 permalinks:
     post: /p/:slug/
@@ -216,22 +189,32 @@ menu:
 
     social:
         - identifier: github
+          weight: 1
           name: GitHub
           url: https://github.com/romophic
           params:
               icon: brand-github
 
         - identifier: twitter
+          weight: 2
           name: Twitter
           url: https://twitter.com/romophic
           params:
               icon: brand-twitter
 
         - identifier: instagram
+          weight: 3
           name: Instagram
           url: https://instagram.com/romophic
           params:
               icon: brand-instagram
+
+        - identifier: discord
+          weight: 4
+          name: Discord
+          url: https://discord.com/users/503094709757935641
+          params:
+            icon: brand-discord
 
 related:
     includeNewer: true
