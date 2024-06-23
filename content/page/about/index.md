@@ -14,5 +14,8 @@ menu:
         params:
             icon: user
 ---
-
-🍣
+- Email: nariyu@tuta.io
+- Twitter: [@romophic](https://x.com/romophic)
+- GitHub: [@romophic](https://github.com/romophic)
+- Instagram: [@romophic](https://instagram.com/romophic)
+- Discord: [@romophic](https://discord.com/users/503094709757935641)
