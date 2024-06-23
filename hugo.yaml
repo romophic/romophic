@@ -54,7 +54,7 @@ params:
         readingTime: false
         license:
             enabled: true
-            default: Licensed under CC BY-NC-ND-SA 4.0
+            default: Licensed under CC BY-NC-ND 4.0
 
     comments:
         enabled: false
