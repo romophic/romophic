@@ -51,10 +51,10 @@ params:
     article:
         math: true
         toc: true
-        readingTime: true
+        readingTime: false
         license:
             enabled: true
-            default: Licensed under CC BY-NC-SA 4.0
+            default: Licensed under CC BY-NC-ND-SA 4.0
 
     comments:
         enabled: false
@@ -157,7 +157,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site: 
+            site: romophic
 
             # Available values: summary, summary_large_image
             card: summary_large_image
@@ -208,13 +208,6 @@ menu:
           url: https://instagram.com/romophic
           params:
               icon: brand-instagram
-
-        - identifier: discord
-          weight: 4
-          name: Discord
-          url: https://discord.com/users/503094709757935641
-          params:
-            icon: brand-discord
 
 related:
     includeNewer: true
