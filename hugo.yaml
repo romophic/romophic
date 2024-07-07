@@ -30,7 +30,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: /fav.jpg # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: /fav.webp # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since: 2024
@@ -46,7 +46,7 @@ params:
         avatar:
             enabled: true
             local: false
-            src: /fav.jpg
+            src: /fav.webp
 
     article:
         math: true
