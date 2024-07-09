@@ -1,4 +1,4 @@
-baseurl: https://romophic.pages.dev
+baseurl: https://romophic.com
 languageCode: ja
 theme: hugo-theme-stack
 paginate: 10
@@ -160,13 +160,13 @@ params:
             site: romophic
 
             # Available values: summary, summary_large_image
-            card: summary_large_image
+            card: summary
 
     defaultImage:
         opengraph:
             enabled: true
             local: false
-            src: fav.jpg
+            src: fav.webp
 
     colorScheme:
         # Display toggle
