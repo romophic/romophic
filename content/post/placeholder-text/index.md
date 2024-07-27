@@ -7,11 +7,6 @@ categories = [
     "Test",
     "Test with whitespaces"
 ]
-tags = [
-    "markdown",
-    "text",
-    "tag with whitespaces"
-]
 image = "matt-le-SJSpo9hQf7s-unsplash.webp"
 +++
 

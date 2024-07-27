@@ -2,10 +2,6 @@
 title = 'STLデータ構造をistream,ostream-compatibleにする'
 date = 2024-06-09T22:01:37+09:00
 description = "Guide to making STL data structures istream/ostream-compatible"
-tags = [
-  "c++",
-  "competitive programming"
-]
 categories = [
   "c++",
   "competitive programming"

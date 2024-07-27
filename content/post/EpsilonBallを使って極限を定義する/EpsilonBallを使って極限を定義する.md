@@ -2,10 +2,6 @@
 title = 'Epsilon Ball(開球体)を使って極限を定義する'
 date = 2024-06-25T16:46:44+09:00
 description = "Define limit by using Epsilon Ball"
-tags = [
-  "Mathematics",
-  "Mathematical Analysis"
-]
 categories = [
   "Mathematics",
   "Mathematical Analysis"
