@@ -7,6 +7,11 @@ categories = [
   "competitive programming"
 ]
 +++
+# tldr
+下の[Source](#source)をコピペすると C++ で vector や tuple などをそのまま cin や cout できます。
+
+-------
+
 - `std::vector`
 - `std::deque`
 - `std::list`
