@@ -134,4 +134,5 @@ istream &operator>>(istream &_istr, deque<T> &_v) { return _irange(_istr, _v); }
 template <class T, class Y>
 istream &operator>>(istream &_istr, pair<T, Y> &_v) { return _istr >> _v.first >> _v.second; }
 ```
-GitHub: https://github.com/romophic/stldumper/blob/main/stldumper.hpp
+
+https://github.com/romophic/stldumper/blob/main/stldumper.hpp
