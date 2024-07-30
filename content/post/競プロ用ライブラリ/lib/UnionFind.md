@@ -44,8 +44,6 @@ uf.groups();
 ```
 でvector{部分集合0, 部分集合1, ...}を得る.
 
-#### 
-
 ## 実装
 ```cpp
 class UnionFind {
