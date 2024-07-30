@@ -6,7 +6,6 @@ categories = [
   "c++",
   "competitive programming"
 ]
-draft = true
 +++
 
 ## 用途
