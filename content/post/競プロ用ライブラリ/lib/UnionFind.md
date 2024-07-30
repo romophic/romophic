@@ -6,7 +6,6 @@ categories = [
   "c++",
   "competitive programming"
 ]
-draft = true
 +++
 ## 用途
 要素がどの集合に属しているかを判定し,部分集合の濃度や部分集合の集合を得る.
