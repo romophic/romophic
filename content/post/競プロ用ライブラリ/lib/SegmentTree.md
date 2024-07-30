@@ -25,7 +25,7 @@ categories = [
 ## 使い方
 ### 宣言
 ```cpp
-SegmentTree seg(配列長, 二項演算するlambda, Monoid);
+SegmentTree<class> seg(配列長, 二項演算するlambda, Monoid);
 ```
 ### 構築
 ```cpp
@@ -96,3 +96,12 @@ public:
 
 ## Verify
 //TODO
+
+## 例
+連続区間の和を高速に求めたいとして:
+```cpp
+SegmentTree<int> seg(n, [](int a, int b){ return a+b; }, 0);
+
+// ~構築~
+```
+の様にlambdaをおけばよい.
