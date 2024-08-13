@@ -4,7 +4,8 @@ date = 2024-08-13T21:00:37+09:00
 description = "romophic-library"
 categories = [
   "c++",
-  "competitive programming"
+  "competitive programming",
+  "heuristic"
 ]
 +++
 ## 用途
