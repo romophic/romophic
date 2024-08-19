@@ -34,7 +34,7 @@ ESAnnealing<State> sa;
 // sa内のStateの初期設定をする
 sa.state.x=0;
 ```
-`eval()`と`modify()`の中身を目的に応じて書き換えてください
+`State`の中身を目的に応じて書き換えてください
 
 ### Hyperparameterの設定 & 焼なます
 ```cpp
