@@ -22,7 +22,7 @@ $ O(|E|\log|E|) $
 ```cpp
 auto res = kruskal(g);
 ```
-resに最小全域木の[UndirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/UndirectedGraph" >}})を得る.
+`res`に最小全域木の[UndirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/UndirectedGraph" >}})を得る.
 
 ## 実装
 ```cpp
