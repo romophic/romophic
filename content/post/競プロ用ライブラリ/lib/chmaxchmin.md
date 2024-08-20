@@ -16,3 +16,5 @@ bool chmax(T &a, const T &b) { return a < b ? a = b, true : false; }
 template <class T>
 bool chmin(T &a, const T &b) { return a > b ? a = b, true : false; }
 ```
+## Depended on
+- **[WarshallFloyd]({{< ref "post/競プロ用ライブラリ/lib/WarshallFloyd" >}})**

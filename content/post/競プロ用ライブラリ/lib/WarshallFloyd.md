@@ -15,6 +15,7 @@ $ O(n^3) $
 
 ## Depends
 - **[DirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/DirectedGraph" >}})**
+- **[chmax/chmin]({{< ref "post/競プロ用ライブラリ/lib/chmaxchmin" >}})**
 
 ## 使い方
 ```cpp
