@@ -42,3 +42,4 @@ public:
 - **[Dijkstra]({{< ref "post/競プロ用ライブラリ/lib/Dijkstra" >}})**
 - **[BellmanFord]({{< ref "post/競プロ用ライブラリ/lib/BellmanFord" >}})**
 - **[TopologicalSort]({{< ref "post/競プロ用ライブラリ/lib/TopologicalSort" >}})**
+- **[getFarthestVertex(最遠頂点を求める)]({{< ref "post/競プロ用ライブラリ/lib/getFarthestVertex" >}})**
