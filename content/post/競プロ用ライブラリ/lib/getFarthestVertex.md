@@ -19,7 +19,7 @@ $ O(n) $
 ## 使い方
 ### 宣言
 ```cpp
-auto res = dijkstra(g,s);
+auto res = getFarthestVertex(g,s);
 ```
 `res.v`で最も遠い頂点の頂点番号を得る. `res.cost`で最も遠い頂点までの距離を得る.
 
@@ -49,3 +49,6 @@ getFarthestVertex_return getFarthestVertex(DirectedGraph &_g, int _v) {
   return res;
 }
 ```
+
+### Verify👍
+https://atcoder.jp/contests/typical90/submissions/57586680
