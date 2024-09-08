@@ -21,15 +21,18 @@ $ O(n) $
 ```cpp
 int res = dijkstra(g,s);
 ```
-`res`で最も遠い頂点の頂点番号を得る.
+`res.v`で最も遠い頂点の頂点番号を得る. `res.cost`で最も遠い頂点までの距離を得る.
 
 ## 実装
 ```cpp
-int getFarthestVertex(DirectedGraph &_g, int _v) {
+struct getFarthestVertex_return {
+  int v, cost;
+};
+getFarthestVertex_return getFarthestVertex(DirectedGraph &_g, int _v) {
   queue<pair<int, int>> q;
   vector<int> t(_g.n, -1);
   q.push({_v, 0});
-  int res = -1;
+  getFarthestVertex_return res = {-1, -1};
   while (!q.empty()) {
     auto p = q.front();
     q.pop();
@@ -41,7 +44,7 @@ int getFarthestVertex(DirectedGraph &_g, int _v) {
         t[i.to] = p.second + i.cost;
       }
     if (tr)
-      res = p.first;
+      res = {p.first, p.second};
   }
   return res;
 }
