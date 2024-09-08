@@ -50,5 +50,8 @@ getFarthestVertex_return getFarthestVertex(DirectedGraph &_g, int _v) {
 }
 ```
 
+## Depended on
+- **[getGraphDiameter(グラフの頂点を求める)]({{< ref "post/競プロ用ライブラリ/lib/getGraphDiameter" >}})**
+
 ### Verify👍
 https://atcoder.jp/contests/typical90/submissions/57586680

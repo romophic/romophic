@@ -14,7 +14,6 @@ categories = [
 $ O(n) $
 
 ## Depends
-- **[DirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/DirectedGraph" >}})**
 - **[getFarthestVertex(最遠頂点を求める)]({{< ref "post/競プロ用ライブラリ/lib/getFarthestVertex" >}})**
 
 ## 使い方
