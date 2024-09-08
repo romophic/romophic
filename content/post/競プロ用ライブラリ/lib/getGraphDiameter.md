@@ -1,5 +1,5 @@
 +++
-title = 'getGraphDiameter(グラフの直径を求める)'
+title = 'getGraphDiameter(木の直径を求める)'
 date = 2024-07-30T22:01:37+09:00
 description = "romophic-library"
 categories = [
@@ -8,7 +8,7 @@ categories = [
 ]
 +++
 ## 用途
-グラフの直径を求める.
+木の直径を求める.
 
 ## 計算量
 $ O(n) $
