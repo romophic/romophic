@@ -19,7 +19,7 @@ $ O(n) $
 ## 使い方
 ### 宣言
 ```cpp
-int res = dijkstra(g,s);
+auto res = dijkstra(g,s);
 ```
 `res.v`で最も遠い頂点の頂点番号を得る. `res.cost`で最も遠い頂点までの距離を得る.
 
