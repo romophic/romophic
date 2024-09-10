@@ -12,9 +12,9 @@ categories = [
 ## 実装
 ```cpp
 template <class T>
-bool chmax(T &a, const T &b) { return a < b ? a = b, true : false; }
+bool chmax(T &a, const T &b) { return a < b ? a = b, 1 : 0; }
 template <class T>
-bool chmin(T &a, const T &b) { return a > b ? a = b, true : false; }
+bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
 ```
 ## Depended on
 - **[WarshallFloyd]({{< ref "post/競プロ用ライブラリ/lib/WarshallFloyd" >}})**
