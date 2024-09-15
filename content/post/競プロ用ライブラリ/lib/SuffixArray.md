@@ -11,7 +11,7 @@ categories = [
 高速な文字列検索を行う. イメージはgrep.
 
 ## 計算量
-構築: $ O(N \log N) $
+構築: $ O(N \log N) $  
 クエリ: $ O(M \log N) $
 
 ## 使い方
@@ -19,6 +19,12 @@ categories = [
 ```cpp
 SuffixArray sufa(s);
 ```
+
+### 検索
+```cpp
+auto res = sufa.lower_upper_bound(t);
+```
+一致部分として`[res.first,res.second)`が得られる.
 
 ## 実装(WIP)
 ```cpp
