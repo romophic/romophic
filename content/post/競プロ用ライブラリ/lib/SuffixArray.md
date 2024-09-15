@@ -8,85 +8,96 @@ categories = [
 ]
 +++
 ## 用途
-高速な文字列検索を行う.
+高速な文字列検索を行う. イメージはgrep.
 
 ## 計算量
-
+構築: $ O(N \log N) $
+クエリ: $ O(M \log N) $
 
 ## 使い方
 ### 構築
 ```cpp
-RollingHash rh(s);
+SuffixArray sufa(s);
 ```
-
-### ハッシュ
-```cpp
-rh.get(l,r)
-```
-$[l,r)$のハッシュを得る.
 
 ## 実装(WIP)
 ```cpp
-struct RollingHash {
-  vector<uint> hashed, power;
-  const uint mod = 0x1fffffffffffffff, base = chrono::duration_cast<chrono::microseconds>(chrono::system_clock::now().time_since_epoch()).count() % mod;
-  static constexpr uint mask(int a) { return (1ULL << a) - 1; }
-  inline uint mul(uint a, uint b) const {
-    __uint128_t ans = __uint128_t(a) * b;
-    ans = (ans >> 61) + (ans & mod);
-    if (ans >= mod)
-      ans -= mod;
-    return ans;
-  }
-  RollingHash(const string &s) {
-    int n = s.size();
-    hashed.assign(n + 1, 0);
-    power.assign(n + 1, 0);
-    power[0] = 1;
-    for (int i = 0; i < n; i++) {
-      power[i + 1] = mul(power[i], base);
-      hashed[i + 1] = mul(hashed[i], base) + s[i];
-      if (hashed[i + 1] >= mod)
-        hashed[i + 1] -= mod;
+struct SuffixArray {
+  vector<int> SA;
+  const string s;
+  SuffixArray(const string &str) : s(str) {
+    SA.resize(s.size());
+    iota(begin(SA), end(SA), 0);
+    sort(begin(SA), end(SA), [&](int a, int b) {
+      return s[a] == s[b] ? a > b : s[a] < s[b];
+    });
+    vector<int> classes(s.size()), c(s.begin(), s.end()), cnt(s.size());
+    for (int len = 1; len < s.size(); len <<= 1) {
+      for (int i = 0; i < s.size(); i++) {
+        if (i > 0 && c[SA[i - 1]] == c[SA[i]] && SA[i - 1] + len < s.size() && c[SA[i - 1] + len / 2] == c[SA[i] + len / 2]) {
+          classes[SA[i]] = classes[SA[i - 1]];
+        } else {
+          classes[SA[i]] = i;
+        }
+      }
+      iota(begin(cnt), end(cnt), 0);
+      copy(begin(SA), end(SA), begin(c));
+      for (int i = 0; i < s.size(); i++) {
+        int s1 = c[i] - len;
+        if (s1 >= 0)
+          SA[cnt[classes[s1]]++] = s1;
+      }
+      classes.swap(c);
     }
   }
-  uint get(int l, int r) const {
-    uint ret = hashed[r] + mod - mul(hashed[l], power[r - l]);
-    if (ret >= mod)
-      ret -= mod;
-    return ret;
+  int operator[](int k) const {
+    return SA[k];
   }
-  uint connect(uint h1, uint h2, int h2len) const {
-    uint ret = mul(h1, power[h2len]) + h2;
-    if (ret >= mod)
-      ret -= mod;
-    return ret;
+  size_t size() const {
+    return s.size();
   }
-  void connect(const string &s) {
-    int n = hashed.size() - 1, m = s.size();
-    hashed.resize(n + m + 1);
-    power.resize(n + m + 1);
-    for (int i = n; i < n + m; i++) {
-      power[i + 1] = mul(power[i], base);
-      hashed[i + 1] = mul(hashed[i], base) + s[i - n];
-      if (hashed[i + 1] >= mod)
-        hashed[i + 1] -= mod;
+  bool lt_substr(const string &t, int si = 0, int ti = 0) {
+    int sn = (int)s.size(), tn = (int)t.size();
+    while (si < sn && ti < tn) {
+      if (s[si] < t[ti])
+        return true;
+      if (s[si] > t[ti])
+        return false;
+      ++si, ++ti;
     }
+    return si >= sn && ti < tn;
   }
-  int LCP(const RollingHash &b, int l1, int r1, int l2, int r2) {
-    int len = min(r1 - l1, r2 - l2);
-    int low = -1, high = len + 1;
+  int lower_bound(const string &t) {
+    int low = -1, high = (int)SA.size();
     while (high - low > 1) {
       int mid = (low + high) / 2;
-      if (get(l1, l1 + mid) == b.get(l2, l2 + mid))
+      if (lt_substr(t, SA[mid]))
         low = mid;
       else
         high = mid;
     }
-    return low;
+    return high;
+  }
+  pair<int, int> lower_upper_bound(string &t) {
+    int idx = lower_bound(t);
+    int low = idx - 1, high = (int)SA.size();
+    t.back()++;
+    while (high - low > 1) {
+      int mid = (low + high) / 2;
+      if (lt_substr(t, SA[mid]))
+        low = mid;
+      else
+        high = mid;
+    }
+    t.back()--;
+    return {idx, high};
+  }
+  void output() {
+    for (int i = 0; i < size(); i++) {
+      cout << i << ": " << s.substr(SA[i]) << endl;
+    }
   }
 };
-
 ```
 
 ### Verify

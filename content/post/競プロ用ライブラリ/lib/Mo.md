@@ -1,5 +1,5 @@
 +++
-title = 'Mo's Algorithm'
+title = "Mo's Algorithm"
 date = 2024-07-30T22:01:37+09:00
 description = "romophic-library"
 categories = [
@@ -14,7 +14,6 @@ categories = [
 $ O(Q\sqrt{N}) $
 
 ## 使い方(WIP)
-
 
 ## 実装(WIP)
 ```cpp
