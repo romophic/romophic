@@ -72,6 +72,7 @@ bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
 - **[入出力高速化]({{< ref "post/競プロ用ライブラリ/lib/入出力高速化" >}})**
 - **[Mo's Algorithm]({{< ref "post/競プロ用ライブラリ/lib/Mo" >}})**
 - **[累積和(1D,2D,3D)]({{< ref "post/競プロ用ライブラリ/lib/Cumulate" >}})**
+- **[インデックス変換(1D,2D,3D)]({{< ref "post/競プロ用ライブラリ/lib/ConvIndex" >}})**
 
 ## ヒューリスティック
 
