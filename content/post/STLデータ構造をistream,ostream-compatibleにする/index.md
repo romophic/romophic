@@ -8,6 +8,7 @@ categories = [
 ]
 +++
 # tldr
+
 下の[Source](#source)をコピペすると C++ で vector や tuple などをそのまま cin や cout できます。
 
 -------
@@ -26,16 +27,19 @@ categories = [
 - `std::unordered_set`
 - `std::unordered_multiset`
 
-のシフト演算子をオーバーロードする   
+のシフト演算子をオーバーロードする
 再帰的に構造体を展開し、例えば`vector<pair<int,int>>`などその要素数に合わせて入力,出力処理ができる
 
 # Examples
+
 ```cpp
 vector<pair<int,int>> a(3);
 cin>>a; // <- 1 2 3 4 5 6
 cout<<a<<endl; // -> [(1, 2), (3, 4), (5, 6)]
 ```
+
 #
+
 ```cpp
 vector<pair<string,tuple<int,int,int>>> a(2);
 cin>>a; // <- abcd 1 2 3 efgh 4 5 6
@@ -43,6 +47,7 @@ cout<<a<<endl; // -> [(abcd, (1, 2, 3)), (efgh, (4, 5, 6))]
 ```
 
 # Source
+
 ```cpp
 template <class T>
 ostream &operator<<(ostream &_ostr, const vector<T> &_v);
@@ -135,4 +140,4 @@ template <class T, class Y>
 istream &operator>>(istream &_istr, pair<T, Y> &_v) { return _istr >> _v.first >> _v.second; }
 ```
 
-https://github.com/romophic/stldumper/blob/main/stldumper.hpp
+<https://github.com/romophic/stldumper/blob/main/stldumper.hpp>
