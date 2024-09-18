@@ -8,14 +8,17 @@ categories = [
 ]
 +++
 ## 用途
+
 オフラインクエリかつクエリ区間の伸縮が簡単に出来る時高速に処理する.
 
 ## 計算量
+
 $ O(Q\sqrt{N}) $
 
 ## 使い方(WIP)
 
 ## 実装(WIP)
+
 ```cpp
 struct Mo { int width; vector<int> left, right, order; vector<bool> v; Mo(int N, int Q) : width((int)sqrt(N)), order(Q), v(N) {
     iota(begin(order), end(order), 0);
@@ -58,4 +61,5 @@ struct Mo { int width; vector<int> left, right, order; vector<bool> v; Mo(int N,
 ```
 
 ### Verify
+
 //TODO

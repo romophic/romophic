@@ -8,24 +8,31 @@ categories = [
 ]
 +++
 ## 用途
+
 指定した始点から終点への最短距離を求める. 負の辺でもOK. 負の閉路を検出可能.
 
 ## 計算量
+
 $ O(|E|\log|V|) $
 
 ## Depends
+
 - **[DirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/DirectedGraph" >}})**
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 auto res = bellmanford(g, s, e);
 ```
+
 `res.path`でsからeへの最短パスを得る.  
 `res.distances`でｓから各頂点への最短距離を得る. 経路が存在しなければINF.  
 `res.hascycle`でgに負の閉路があるかを得る.
 
 ## 実装
+
 ```cpp
 struct bellmanford_return {
   vector<int> path, distances;

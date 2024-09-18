@@ -8,30 +8,40 @@ categories = [
 ]
 +++
 ## 用途
+
 [SegmentTree]({{< ref "post/競プロ用ライブラリ/lib/SegmentTree" >}})の一点更新を区間更新として$O(\log n)$で行う.
 
 ## 計算量
+
 初期化: $O(n)$  
 クエリ: $\log(n)$
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 LazySegmentTree<class> lseg(配列長, 二項演算するlambda, 単位元);
 ```
+
 ### 構築&更新
+
 ```cpp
 lseg.update(a, b, x);
 ```
+
 で$ [a,b) $をxで更新する.
 
 ### クエリ
+
 ```cpp
 lseg.query(a,b)
 ```
+
 で半開区間$ \left[ a,b \right) $に演算を適応した値が得られる.
 
 ## 実装
+
 例として区間和を求める場合、`update(a,b,x)`の動作を
 
 - 区間更新: $ \text{seg}_i \rightarrow x$
@@ -40,6 +50,7 @@ lseg.query(a,b)
 にするかで実装が異なる
 
 ### 区間更新型ver
+
 ```cpp
 template <class T>
 struct LazySegmentTree {
@@ -93,6 +104,7 @@ struct LazySegmentTree {
 ```
 
 ### 区間加算型ver
+
 ```cpp
 template <class T>
 struct LazySegmentTree {
@@ -150,13 +162,17 @@ struct LazySegmentTree {
 ```
 
 ## Verify
+
 //TODO
 
 ## 例
+
 連続区間の和を高速に求めたいとして:
+
 ```cpp
 LazySegmentTree<int> lseg(n, [](int a, int b){ return a+b; }, 0);
 
 // ~構築~
 ```
+
 の様にlambdaをおけばよい.

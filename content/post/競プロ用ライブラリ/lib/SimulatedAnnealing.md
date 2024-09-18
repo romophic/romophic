@@ -8,13 +8,17 @@ categories = [
 ]
 +++
 ## 用途
+
 $ f: D \rightarrow \mathbb{R} $の返り値が定義域$ D $で最大になるような$x \in D$を求める. 焼きなまし法です.
 
 ## 計算量
+
 $ O\left(\text{epoch} \left \lceil \dfrac{\log \text{(target temp)} - \log {\text{(init  temp)}}}{\log \text{(cooling coef)}} \right \rceil \right ) $
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 struct State{ // 状態を表す構造体
   double x;
@@ -33,21 +37,25 @@ ESAnnealing<State> sa;
 // sa内のStateの初期設定をする
 sa.state.x=0;
 ```
+
 `State`の中身を目的に応じて書き換えてください
 
 ### Hyperparameterの設定 & 焼なます
+
 ```cpp
 // (epoch当たりの試行回数, 初期温度, 目標温度, 冷却係数)
 sa.annealing(100,100000,0.1,0.99);
 ```
 
 ### 結果の参照
+
 ```cpp
 // 結果はクラス内のstateで参照できる
 std::cout << "Solution: " << "f(x) = " << sa.state.eval() << ", x = " << sa.state.x << std::endl;
 ```
 
 ## 実装
+
 ```cpp
 template <class T>
 class ESAnnealing
@@ -119,6 +127,9 @@ private:
   }
 };
 ```
+
 from [github.com/romophic/ESAnnealing](https://github.com/romophic/ESAnnealing)
+
 ## Verify
+
 //TODO

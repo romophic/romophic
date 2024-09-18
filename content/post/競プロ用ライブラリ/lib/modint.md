@@ -8,17 +8,21 @@ categories = [
 ]
 +++
 ## 用途
+
 自動でModを取る
 
 ## 計算量
+
 $O(1)$
 
 ## 宣言
+
 ```cpp
 ModInt<1000000007> mi = 0;
 ```
 
 ## 実装
+
 ```cpp
 template <int Mod>
 class ModInt {
@@ -67,5 +71,7 @@ public:
   }
 };
 ```
+
 ## Verify
+
 //TODO

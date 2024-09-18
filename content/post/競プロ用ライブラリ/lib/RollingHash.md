@@ -8,25 +8,32 @@ categories = [
 ]
 +++
 ## 用途
+
 文字列が一致しているかの判定を定数時間で行う. ロリハ.
 
 ## 計算量
+
 構築: $ O(n) $  
 クエリ: $ O(1) $
 
 ## 使い方
+
 ### 構築
+
 ```cpp
 RollingHash rh(s);
 ```
 
 ### ハッシュ
+
 ```cpp
 rh.get(l,r)
 ```
+
 $[l,r)$のハッシュを得る.
 
 ## 実装(WIP)
+
 ```cpp
 struct RollingHash {
   vector<uint> hashed, power;
@@ -91,4 +98,5 @@ struct RollingHash {
 ```
 
 ### Verify
+
 //TODO

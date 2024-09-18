@@ -8,22 +8,28 @@ categories = [
 ]
 +++
 ## 用途
+
 重み付き有向グラフの全頂点ペアの最短距離を求める. 負の閉路が無いことを前提とする.
 
 ## 計算量
+
 $ O(n^3) $
 
 ## Depends
+
 - **[DirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/DirectedGraph" >}})**
 - **[chmax/chmin]({{< ref "post/競プロ用ライブラリ/lib/chmaxchmin" >}})**
 
 ## 使い方
+
 ```cpp
 auto res = warshallfloyd(g);
 ```
+
 `res.dist[s][e]`で頂点sからeの距離, `res.next[s][e]`で頂点sからeへ最短で到達するために次に到達すべき頂点を得る.
 
 ## 実装
+
 ```cpp
 struct warshallfloyd_return {
   vector<vector<int>> dist, next;

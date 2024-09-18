@@ -8,20 +8,25 @@ categories = [
 ]
 +++
 ## 用途
+
 重み付き無向グラフを扱う.
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 UndirectedGraph g(n);
 ```
 
 ### 重み付き無向パスの追加
+
 ```cpp
 g.add(頂点, 頂点, 重み);
 ```
 
 ## 実装
+
 ```cpp
 class UndirectedGraph{
 public:
@@ -38,4 +43,5 @@ public:
 ```
 
 ## Depended on
+
 - **[Kruskal]({{< ref "post/競プロ用ライブラリ/lib/Kruskal" >}})**

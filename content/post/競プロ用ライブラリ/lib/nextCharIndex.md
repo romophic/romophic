@@ -8,18 +8,23 @@ categories = [
 ]
 +++
 ## 用途
+
 文字列の`i`th以降で文字cが出現する最小のindexを返す. 存在しなければ文字列長を返す.
 
 ## 計算量
+
 $ O(n) $
 
 ## 使い方
+
 ```cpp
 auto res = nextCharIndex(s);
 ```
+
 `s`は`std::string`, `res[i][j]`で`i`th以降(`i`thも含む)で文字`c`が出現するindexを得る.
 
 ## 実装
+
 ```cpp
 vector<vector<int>> nextCharIndex(string &_s) {
   vector m(_s.size() + 1, vector<int>(26));
@@ -36,4 +41,4 @@ vector<vector<int>> nextCharIndex(string &_s) {
 ```
 
 ### Verify👍
-https://atcoder.jp/contests/typical90/submissions/57632650
+<https://atcoder.jp/contests/typical90/submissions/57632650>

@@ -8,22 +8,29 @@ categories = [
 ]
 +++
 ## 用途
+
 有向非巡回グラフ(DAG)の頂点を線形順序に並べる.
 
 ## 計算量
+
 $ O(V + E) $
 
 ## Depends
+
 - **[DirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/DirectedGraph" >}})**
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 auto res = topologicalSord(g);
 ```
+
 `res`で線形順序に並べられた頂点を得る.
 
 ## 実装
+
 ```cpp
 vector<int> topologicalSort(DirectedGraph &_g) {
   vector<int> d, ind(_g.n);

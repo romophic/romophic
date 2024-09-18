@@ -8,22 +8,29 @@ categories = [
 ]
 +++
 ## 用途
+
 木において指定した頂点からもっとも遠い頂点を得る.
 
 ## 計算量
+
 $ O(n) $
 
 ## Depends
+
 - **[DirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/DirectedGraph" >}})**
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 auto res = getFarthestVertex(g,s);
 ```
+
 `res.v`で最も遠い頂点の頂点番号を得る. `res.cost`で最も遠い頂点までの距離を得る.
 
 ## 実装
+
 ```cpp
 struct getFarthestVertex_return {
   int v, cost;
@@ -51,7 +58,8 @@ getFarthestVertex_return getFarthestVertex(DirectedGraph &_g, int _v) {
 ```
 
 ## Depended on
+
 - **[getGraphDiameter(グラフの直径を求める)]({{< ref "post/競プロ用ライブラリ/lib/getGraphDiameter" >}})**
 
 ### Verify👍
-https://atcoder.jp/contests/typical90/submissions/57586680
+<https://atcoder.jp/contests/typical90/submissions/57586680>

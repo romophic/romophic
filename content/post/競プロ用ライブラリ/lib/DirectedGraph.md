@@ -8,20 +8,25 @@ categories = [
 ]
 +++
 ## 用途
+
 重み付き有向グラフを扱う.
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 DirectedGraph g(n);
 ```
 
 ### 重み付き有向パスの追加
+
 ```cpp
 g.add(パス始点, パス終点, 重み);
 ```
 
 ## 実装
+
 ```cpp
 class DirectedGraph {
 public:
@@ -38,6 +43,7 @@ public:
 ```
 
 ## Depended on
+
 - **[WarshallFloyd]({{< ref "post/競プロ用ライブラリ/lib/WarshallFloyd" >}})**
 - **[Dijkstra]({{< ref "post/競プロ用ライブラリ/lib/Dijkstra" >}})**
 - **[BellmanFord]({{< ref "post/競プロ用ライブラリ/lib/BellmanFord" >}})**

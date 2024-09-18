@@ -8,23 +8,30 @@ categories = [
 ]
 +++
 ## 用途
+
 最小全域木を求める.
 
 ## 計算量
+
 $ O(|E|\log|E|) $
 
 ## Depends
+
 - **[UndirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/UndirectedGraph" >}})**
 - **[UnionFind]({{< ref "post/競プロ用ライブラリ/lib/UnionFind" >}})**
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 auto res = kruskal(g);
 ```
+
 `res`に最小全域木の[UndirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/UndirectedGraph" >}})を得る.
 
 ## 実装
+
 ```cpp
 UndirectedGraph kruskal(UndirectedGraph &_g) {
   UnionFind uf(_g.n);

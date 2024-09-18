@@ -13,6 +13,7 @@ aliases = [
 +++
 元々は[github.com/romophic/Compro](https://github.com/romophic/Compro)にまとめていたライブラリを適当にまとめたものです. 盆栽を勧められたので始めました.  
 前提テンプレート:
+
 ```cpp
 #pragma GCC optimize("Ofast")
 #include <bits/stdc++.h>
@@ -30,7 +31,9 @@ bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
 ```
 
 ## アルゴリズム
+
 ### グラフ
+
 - **[DirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/DirectedGraph" >}})**
   - **[WarshallFloyd]({{< ref "post/競プロ用ライブラリ/lib/WarshallFloyd" >}})**
   - **[Dijkstra]({{< ref "post/競プロ用ライブラリ/lib/Dijkstra" >}})**
@@ -42,23 +45,27 @@ bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
   - **[Kruskal]({{< ref "post/競プロ用ライブラリ/lib/Kruskal" >}})**
 
 ### データ構造
+
 - **[UnionFind]({{< ref "post/競プロ用ライブラリ/lib/UnionFind" >}})**
 - **[WeightedUnionFind]({{< ref "post/競プロ用ライブラリ/lib/WeightedUnionFind" >}})**
 - **[SegmentTree]({{< ref "post/競プロ用ライブラリ/lib/SegmentTree" >}})**
 - **[LazySegmentTree]({{< ref "post/競プロ用ライブラリ/lib/LazySegmentTree" >}})**
 
 ### 数学
+
 - **[素因数分解]({{< ref "post/競プロ用ライブラリ/lib/素因数分解" >}})**
 - **[約数列挙]({{< ref "post/競プロ用ライブラリ/lib/約数列挙" >}})**
 - **[繰り返し二乗法]({{< ref "post/競プロ用ライブラリ/lib/繰り返し二乗法" >}})**
 - **[ModInt]({{< ref "post/競プロ用ライブラリ/lib/ModInt" >}})**
 
 ### 文字列
+
 - **[文字列のith以降で文字cが出現する最小のindex]({{< ref "post/競プロ用ライブラリ/lib/nextCharIndex" >}})**
 - **[RollingHash]({{< ref "post/競プロ用ライブラリ/lib/RollingHash" >}})**
 - **[SuffixArray]({{< ref "post/競プロ用ライブラリ/lib/SuffixArray" >}})**
 
 ### その他
+
 - **[二分探索]({{< ref "post/競プロ用ライブラリ/lib/二分探索" >}})**
 - **[chmax/chmin]({{< ref "post/競プロ用ライブラリ/lib/chmaxchmin" >}})**
 - **[STLデータ構造にそのままcin/coutするやつ]({{< ref "post/STLデータ構造をistream,ostream-compatibleにする" >}})**
@@ -67,9 +74,12 @@ bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
 - **[累積和(1D,2D,3D)]({{< ref "post/競プロ用ライブラリ/lib/Cumulate" >}})**
 
 ## ヒューリスティック
+
 - **[SimulatedAnnealing]({{< ref "post/競プロ用ライブラリ/lib/SimulatedAnnealing" >}})**
 
 ## お世話になったライブラリ
+
 自由に使って良いとあるところからのみ参考にさせて頂いて実装しました.  &emsp;$ \mathit{thank\ you...} $
-- https://ei1333.github.io/luzhiled
-- https://github.com/tatyam-prime/kyopro_library
+
+- <https://ei1333.github.io/luzhiled>
+- <https://github.com/tatyam-prime/kyopro_library>

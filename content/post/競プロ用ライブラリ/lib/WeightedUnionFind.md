@@ -9,43 +9,57 @@ categories = [
 +++
 
 ## 用途
+
 UnionFindに重みを持たせて要素間の距離も管理できるようにしたもの.
 
 ## 計算量
+
 $ O(\alpha(n)) $, $\alpha$はAckermann関数の逆関数
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 WeightedUnionFind<距離を表すclass> wuf(要素数);
 ```
 
 ### クエリ
+
 #### マージ
+
 ```cpp
 uf.merge(a,b,w);
 ```
+
 aが属する集合と,bが属する集合をbの重み-aの重み = w、つまりaよりbの方がw重みがあるようにマージする.
 
 #### 同一の集合か判定
+
 ```
 wuf.isSame(a,b);
 ```
+
 a,bが同一の集合に属しているか判定する
 
 #### 集合サイズ
+
 ```cpp
 wuf.size(a);
 ```
+
 aが属する集合の濃度を返す
 
 #### 重みの差
+
 ```cpp
 wuf.diff(a,b);
 ```
+
 でbの重み-aの重みを得る.
 
 ## 実装
+
 ```cpp
 template <class T>
 class WeightedUnionFind {
@@ -88,5 +102,7 @@ private:
   }
 };
 ```
+
 ## Verify
+
 //TODO

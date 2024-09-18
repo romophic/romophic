@@ -8,43 +8,57 @@ categories = [
 ]
 +++
 ## 用途
+
 要素がどの集合に属しているかを判定し,部分集合の濃度や部分集合の集合を得る.
 
 ## 計算量
+
 $ O(\alpha(n)) $, $\alpha$はAckermann関数の逆関数
 
 ## 使い方
+
 ### 宣言
+
 ```cpp
 UnionFind uf(要素数);
 ```
 
 ### クエリ
+
 #### マージ
+
 ```cpp
 uf.merge(a,b);
 ```
+
 aが属する集合と,bが属する集合をマージする
 
 #### 同一の集合か判定
+
 ```cpp
 uf.isSame(a,b);
 ```
+
 a,bが同一の集合に属しているか判定する
 
 #### 集合サイズ
+
 ```cpp
 uf.size(a);
 ```
+
 aが属する集合の濃度を返す
 
 #### 部分集合の集合
+
 ```cpp
 uf.groups();
 ```
+
 でvector{部分集合0, 部分集合1, ...}を得る.
 
 ## 実装
+
 ```cpp
 class UnionFind {
 public:
@@ -87,5 +101,7 @@ public:
   }
 };
 ```
+
 ## Verify
+
 //TODO
