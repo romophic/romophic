@@ -185,7 +185,14 @@ params:
 ### See https://stack.jimmycai.com/config/menu
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
 menu:
-    main: []
+    main:
+        - identifier: romophic-Library
+          name: romophic-Library
+          url: /p/romophic-Library
+          weight: 0
+          params:
+            icon: tag
+            newTab: false
 
     social:
         - identifier: github

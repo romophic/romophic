@@ -1,11 +1,14 @@
 +++
-title = '競プロ用ライブラリ'
+title = 'romophic-Library'
 date = 2024-07-30T22:01:37+09:00
 description = "Library for Competitive Programming"
 categories = [
   "c++",
   "competitive programming",
   "heuristic"
+]
+aliases = [
+  "競プロライブラリ"
 ]
 +++
 元々は[github.com/romophic/Compro](https://github.com/romophic/Compro)にまとめていたライブラリを適当にまとめたものです. 盆栽を勧められたので始めました.  
