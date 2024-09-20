@@ -8,7 +8,8 @@ categories = [
   "heuristic"
 ]
 aliases = [
-  "競プロライブラリ"
+  "競プロライブラリ",
+  "競プロ用ライブラリ"
 ]
 +++
 元々は[github.com/romophic/Compro](https://github.com/romophic/Compro)にまとめていたライブラリを適当にまとめたものです. 盆栽を勧められたので始めました.  
