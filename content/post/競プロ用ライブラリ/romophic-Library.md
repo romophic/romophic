@@ -44,6 +44,7 @@ bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
   - **[getGraphDiameter(木の頂点を求める)]({{< ref "post/競プロ用ライブラリ/lib/getGraphDiameter" >}})**
 - **[UndirectedGraph]({{< ref "post/競プロ用ライブラリ/lib/UndirectedGraph" >}})**
   - **[Kruskal]({{< ref "post/競プロ用ライブラリ/lib/Kruskal" >}})**
+- **[強連結成分分解(SCC)]({{< ref "post/競プロ用ライブラリ/lib/SCC" >}})**
 
 ### データ構造
 
