@@ -59,6 +59,7 @@ bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
 - **[約数列挙]({{< ref "post/競プロ用ライブラリ/lib/約数列挙" >}})**
 - **[繰り返し二乗法]({{< ref "post/競プロ用ライブラリ/lib/繰り返し二乗法" >}})**
 - **[ModInt]({{< ref "post/競プロ用ライブラリ/lib/ModInt" >}})**
+- **[進数変換]({{< ref "post/競プロ用ライブラリ/lib/convNotation" >}})**
 
 ### 文字列
 
