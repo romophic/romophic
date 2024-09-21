@@ -60,6 +60,7 @@ bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
 - **[繰り返し二乗法]({{< ref "post/競プロ用ライブラリ/lib/繰り返し二乗法" >}})**
 - **[ModInt]({{< ref "post/競プロ用ライブラリ/lib/ModInt" >}})**
 - **[進数変換]({{< ref "post/競プロ用ライブラリ/lib/convNotation" >}})**
+- **[Euler's totient function]({{< ref "post/競プロ用ライブラリ/lib/Euler's totient function" >}})**
 
 ### 文字列
 
