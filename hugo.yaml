@@ -216,6 +216,13 @@ menu:
           params:
               icon: brand-instagram
 
+        - identifier: rss
+          weight: 4
+          name: RSS
+          url: https://romophic.com/index.xml
+          params:
+              icon: rss
+
 related:
     includeNewer: true
     threshold: 60
