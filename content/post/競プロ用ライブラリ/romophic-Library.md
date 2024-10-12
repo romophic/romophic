@@ -61,6 +61,7 @@ bool chmin(T &a, const T &b) { return a > b ? a = b, 1 : 0; }
 - **[ModInt]({{< ref "post/競プロ用ライブラリ/lib/ModInt" >}})**
 - **[進数変換]({{< ref "post/競プロ用ライブラリ/lib/convNotation" >}})**
 - **[Euler's totient function]({{< ref "post/競プロ用ライブラリ/lib/Euler's totient function" >}})**
+- **[多倍長整数]({{< ref "post/競プロ用ライブラリ/lib/BigInt" >}})**
 
 ### 文字列
 
