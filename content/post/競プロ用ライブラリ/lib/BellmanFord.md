@@ -13,7 +13,7 @@ categories = [
 
 ## 計算量
 
-$ O(|E|\log|V|) $
+$ O(|V||E|) $
 
 ## Depends
 
