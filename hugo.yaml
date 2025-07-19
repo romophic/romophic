@@ -1,7 +1,6 @@
 baseurl: https://romophic.com
 languageCode: ja
 theme: hugo-theme-stack
-paginate: 6
 title: romophic
 copyright: romophic
 
