@@ -193,6 +193,14 @@ menu:
             icon: tag
             newTab: false
 
+        - identifier: Palimpsest
+          name: Palimpsest
+          url: /p/Palimpsest
+          weight: 1
+          params:
+            icon: tag
+            newTab: false
+
     social:
         - identifier: github
           weight: 1
